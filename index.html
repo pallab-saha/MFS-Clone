@@ -13,12 +13,12 @@
   </head>
   <body>
     <main
-      class="h-screen overflow-auto flex items-center justify-center bg-gray-100"
+      class="flex justify-center "
     >
-      <div class="flex justify-center mockup-phone">
+      <div class="mockup-phone">
         <div class="camera"></div>
         <div class="display">
-          <div class="artboard artboard-demo phone-1">
+          <div class="artboard artboard-demo phone-3">
             <!-- Login Section  -->
 
             <div class="hero bg-base-200 min-h-screen">
@@ -28,22 +28,24 @@
                 >
                   <div class="card-body">
                     <fieldset class="fieldset">
-                      <label class="label">Phone Number</label>
-                      <input type="text" class="input" placeholder="Your Phone Number" />
-                      <label class="label">Pin</label>
+                      <label class="label"><b>Phone Number</b></label>
+                      <input id="phone-number" type="text" class="input" placeholder="Your Phone Number" />
+                      <label class="label"><b>Pin</b></label>
                       <input
+                        id="pin"
                         type="password"
                         class="input"
                         placeholder="Your Pin"
                         autocomplete="off"
                       /><br><br>
-                      <div><a class="link link-hover">Forgot password?</a></div><br>
-                      <button class="btn btn-neutral mt-4">Login</button>
+                      <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
                     </fieldset>
                   </div>
                 </div>
               </div>
             </div>
+            
+            <!-- Login Section Ends -->
           </div>
         </div>
       </div>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MFS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <!-- Availeable Balance Section -->
+            <div>
+              <div class="stats shadow">
+                <div class="stat">
+                  <div id="current-balance" class="stat-value">10000</div>
+                  <div class="stat-title">Available Balance</div>
+                </div>
+              </div>
+            </div>
+            <!-- Availeable Balance Section Ends -->
+            <div class="divider"></div>
+            <!-- Added a divider -->
+            <!-- User Action Button Section -->
+            <div class="flex justify-center gap-2">
+              <button class="btn btn-active btn-warning">Add Money</button>
+              <button class="btn btn-active btn-warning">Cash Out</button>
+            </div>
+            <div class="divider"></div>
+            <!-- Added a divider -->
+            <!-- Amount added Section starts -->
+            <div class="hidden">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="label"><b>Amount</b></label>
+                    <input
+                      id="amountInput"
+                      type="text"
+                      class="input w-full"
+                      placeholder="Amount"
+                    />
+                    <label class="label"><b>Pin</b></label>
+                    <input
+                      id="pin"
+                      type="password"
+                      class="input w-full"
+                      placeholder="Pin"
+                      autocomplete="off"
+                    /><br /><br />
+                    <button
+                      id="btn-add-money"
+                      class="btn btn-neutral mt-4 w-full"
+                    >
+                      Add Money
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <!-- Amount added Section ends -->
+
+            <!-- cash out section starts -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label"><b>Amount</b></label>
+                  <input
+                    id="amountInput"
+                    type="text"
+                    class="input w-full"
+                    placeholder="Amount"
+                  />
+                  <label class="label"><b>Pin</b></label>
+                  <input
+                    id="pin"
+                    type="password"
+                    class="input w-full"
+                    placeholder="Pin"
+                    autocomplete="off"
+                  /><br /><br />
+                  <button
+                    id="btn-add-money"
+                    class="btn btn-neutral mt-4 w-full"
+                  >
+                    Cash Out
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+            <!-- Cash out section ends -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
+  </body>
+</html>
