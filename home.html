@@ -31,13 +31,13 @@
             <!-- Added a divider -->
             <!-- User Action Button Section -->
             <div class="flex justify-center gap-2">
-              <button class="btn btn-active btn-warning">Add Money</button>
-              <button class="btn btn-active btn-warning">Cash Out</button>
+              <button id="show-add-money" class="btn btn-active btn-warning">Add Money</button>
+              <button id="show-cash-out" class="btn btn-active btn-warning">Cash Out</button>
             </div>
             <div class="divider"></div>
             <!-- Added a divider -->
             <!-- Amount added Section starts -->
-            <div class="hidden">
+            <div class="">
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div class="card-body">
                   <fieldset class="fieldset">
@@ -46,7 +46,7 @@
                       id="amountInput"
                       type="text"
                       class="input w-full"
-                      placeholder="Amount"
+                      placeholder="Add Money Amount"
                     />
                     <label class="label"><b>Pin</b></label>
                     <input
@@ -69,26 +69,27 @@
             <!-- Amount added Section ends -->
 
             <!-- cash out section starts -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="hidden">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
               <div class="card-body">
                 <fieldset class="fieldset">
                   <label class="label"><b>Amount</b></label>
                   <input
-                    id="amountInput"
+                    id="cashOutInput"
                     type="text"
                     class="input w-full"
-                    placeholder="Amount"
+                    placeholder="Cash Out Amount"
                   />
                   <label class="label"><b>Pin</b></label>
                   <input
-                    id="pin"
+                    id="cashOutPin"
                     type="password"
                     class="input w-full"
                     placeholder="Pin"
                     autocomplete="off"
                   /><br /><br />
                   <button
-                    id="btn-add-money"
+                    id="btn-cash-out"
                     class="btn btn-neutral mt-4 w-full"
                   >
                     Cash Out
@@ -96,12 +97,13 @@
                 </fieldset>
               </div>
             </div>
+            </div>
             <!-- Cash out section ends -->
           </div>
         </div>
       </div>
     </main>
-
+    <script src="js/toggle.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/cashOut.js"></script>
   </body>
