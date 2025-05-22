@@ -18,5 +18,5 @@ document.getElementById('show-add-money').addEventListener('click', function (ev
     //showing add money form
 
     //document.getElementById('add-money-form').style.display = 'block';
-    document.getElementById('cash-out-form').classList.remove('hidden');
+    document.getElementById('add-money-form').classList.remove('hidden');
 })
